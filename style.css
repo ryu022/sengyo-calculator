@@ -1,0 +1,5 @@
+body{font-family:sans-serif;max-width:480px;margin:auto;background:#eef6fb;padding:10px 10px 80px}
+h1{text-align:center}.card{background:#fff;border-radius:18px;padding:14px;margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+input{width:100%;box-sizing:border-box;padding:16px;font-size:24px;border:2px solid #d7e6f4;border-radius:14px;margin:8px 0}
+.btns{display:flex;gap:6px;flex-wrap:wrap}button{flex:1;padding:12px 0;font-size:18px;border:none;border-radius:12px;background:#e3edf7}
+button.active{background:#1f78d1;color:#fff;font-weight:bold}.main{font-size:30px;font-weight:bold;color:#0b5ea8}

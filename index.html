@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>鮮魚電卓</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1f78d1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🐟 鮮魚電卓</h1>
+
+<section class="card"><h2>① 売価計算</h2>
+<input id="c1" inputmode="numeric" placeholder="原価">
+<div id="m1" class="btns"></div>
+<div>経費込: <span id="e1">0</span>円</div>
+<div class="main">売価: <span id="s1">0</span>円</div></section>
+
+<section class="card"><h2>② 必要パック数</h2>
+<input id="c2" inputmode="numeric" placeholder="ケース原価">
+<input id="p2" inputmode="numeric" value="498" placeholder="1P売価">
+<div id="m2" class="btns"></div>
+<div class="main"><span id="need2">0</span>パック</div></section>
+
+<section class="card"><h2>③ 歩留まり込み売価</h2>
+<input id="c3" inputmode="numeric" placeholder="原価">
+<input id="y3" inputmode="numeric" value="70" placeholder="歩留まり%">
+<div id="m3" class="btns"></div>
+<div>歩留まり込原価: <span id="cost3">0</span>円</div>
+<div class="main">売価: <span id="sell3">0</span>円</div></section>
+
+<section class="card"><h2>⑤ 1尾原価 → 売価</h2>
+<input id="c5" inputmode="numeric" placeholder="ケース原価">
+<input id="n5" inputmode="numeric" placeholder="尾数">
+<div id="m5" class="btns"></div>
+<div>1尾原価: <span id="one5">0</span>円</div>
+<div class="main">売価: <span id="sell5">0</span>円</div></section>
+
+<script src="script.js"></script>
+<script>
+if('serviceWorker' in navigator){
+ navigator.serviceWorker.register('./service-worker.js');
+}
+</script>
+</body></html>
